@@ -1,0 +1,149 @@
+:root {
+  --biru-tua: #0077b6;
+  --biru-muda: #caf0f8;
+  --putih: #ffffff;
+  --abu: #f1f1f1;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--abu);
+  color: #333;
+  line-height: 1.6;
+}
+
+img.logo {
+  width: 80px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* HEADER */
+header {
+  background-color: var(--biru-tua);
+  color: var(--putih);
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+
+.tagline {
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
+  color: #d0ebff;
+}
+
+/* HERO */
+.hero {
+  background-color: var(--biru-muda);
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: #03045e;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+}
+
+/* LAYANAN */
+.layanan {
+  padding: 50px 20px;
+  background: var(--putih);
+  text-align: center;
+}
+
+.layanan h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: var(--biru-tua);
+  margin-bottom: 40px;
+}
+
+.grid-layanan {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* KONTAK */
+.kontak {
+  padding: 40px 20px;
+  background: #e0f7ff;
+  text-align: center;
+}
+
+.kontak h2 {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  margin-bottom: 20px;
+  color: #023e8a;
+}
+
+.kontak a {
+  color: var(--biru-tua);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--biru-tua);
+  color: var(--putih);
+  text-align: center;
+  padding: 15px;
+}
+
+/* WHATSAPP FLOAT */
+.wa-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+.wa-float:hover {
+  background: #1ebc59;
+}
